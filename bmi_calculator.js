@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-import './index.css'
+import 'index.css'
 
 function App() {
 
@@ -41,11 +41,11 @@ function App() {
     imgSrc = null
   } else {
     if(bmi < 25) {
-      imgSrc = require('../src/assets/underweight.png')
+      imgSrc = require('img/underweight.png')
     } else if (bmi >= 25 && bmi < 30) {
-      imgSrc = require('../src/assets/healthy.png')
+      imgSrc = require('img/healthy.png')
     } else {
-      imgSrc = require('../src/assets/overweight.png')
+      imgSrc = require('img/overweight.png')
     }
   }
 
